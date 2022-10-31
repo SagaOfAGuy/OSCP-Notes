@@ -2,6 +2,12 @@
 
 ## Manual Scanning
 https://nmap.org/book/
+List all machines on subnet
+```bash
+sudo nmap -sL 10.1.1.0/24
+```
+
+
 - Fast Full System Scan - Top 20 ports
 ```bash
 sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 20 | tee fullscan.txt
