@@ -10,19 +10,19 @@ sudo nmap -sL 10.1.1.0/24
 
 - Fast Full System Scan - Top 20 ports
 ```bash
-sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 20 | tee fullscan.txt
+sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 20 | tee fullscan.txt
 ```
-- Full System Scan - Top 20 ports
+- Fast Full System Scan - Top 20 ports
 ```bash
-sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 20 | tee fullscan.txt
+sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 20 | tee fullscan.txt
 ```
 - Fast Full System Scan - Top 100 ports
 ```bash
-sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 100 | tee fullscan.txt
+sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 100 | tee fullscan.txt
 ```
-- Full System Scan - Top 100 ports
+- Fast Full System Scan - Top 100 ports
 ```bash
-sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 100 | tee fullscan.txt
+sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 100 | tee fullscan.txt
 ```
 
 
