@@ -14,7 +14,7 @@ sudo nmap -sL 10.1.1.0/24
 ```bash
 sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 20 | tee fullscan.txt
 ```
-- Fast Full System Scan
+- Full System Scan
 ```bash
 sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 20 | tee fullscan.txt
 ```
@@ -29,16 +29,24 @@ sudo nmap -A -sV -sC -sU -Pn $IP --version-intensity 0 --script=*enum --script=v
 ```
 
 #### Top 100 ports
-```
-- Fast Full System Scan - Top 100 ports
+
+- Fast Full System Scan
 ```bash
 sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 100 | tee fullscan.txt
 ```
-- Fast Full System Scan - Top 100 ports
+- Full System Scan
 ```bash
 sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 100 | tee fullscan.txt
 ```
+- TCP Scan
+```bash
+sudo nmap -A -sV -sC -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 100 | tee fullscan.txt
+```
 
+- UDP Scan
+```bash
+sudo nmap -A -sV -sC -sU -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 100 | tee fullscan.txt
+```
 
 
 
