@@ -25,7 +25,8 @@ dpkg -i $FILE
 ```bash
 rustscan --version
 ```
-#### Examples
+<ins>Examples</in>
+
 ```
 rustscan -a $IP | tee fullscan.txt
 ```
@@ -37,7 +38,8 @@ Install `autorecon`
 ```bash
 python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
 ```
-#### Examples
+<ins>Examples</ins>
+
 Default Scan
 ```bash
 autorecon $IP 
@@ -51,7 +53,8 @@ Install `nmapAutomator`
 git clone https://github.com/21y4d/nmapAutomator.git
 sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
 ```
-#### Examples
+<ins>Examples</ins>
+
 Scan everything
 ```bash
 nmapAutomator -H $IP -t all 
