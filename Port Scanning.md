@@ -39,7 +39,7 @@ wget https://github.com/RustScan/RustScan/archive/refs/tags/2.1.0.zip
 ```bash
 dpkg -i $FILE
 ```
-3. Confirm** `rustscan` works
+3. Confirm `rustscan` works
 ```bash
 rustscan --version
 ```
