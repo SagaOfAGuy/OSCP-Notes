@@ -13,15 +13,15 @@ sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-
 ## Rustscan
 https://github.com/RustScan/RustScan
 
-**1. Install** `rustscan` **package**
+1. Install `rustscan` package
 ```bash
 wget https://github.com/RustScan/RustScan/archive/refs/tags/2.1.0.zip
 ```
-**2. Install package into** `dpkg`
+2. Install package into `dpkg`
 ```bash
 dpkg -i $FILE
 ```
-**3. Confirm** `rustscan` **works**
+3. Confirm** `rustscan` works
 ```bash
 rustscan --version
 ```
@@ -33,7 +33,7 @@ rustscan -a $IP | tee fullscan.txt
 ## Autorecon
 https://github.com/Tib3rius/AutoRecon
 
-**1. Install** `autorecon`
+1. Install `autorecon`
 ```bash
 python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
 ```
@@ -46,7 +46,7 @@ autorecon $IP
 ## NmapAutomator
 https://github.com/21y4d/nmapAutomator
 
-**1. Install** `nmapAutomator`
+1. Install `nmapAutomator`
 ```bash
 git clone https://github.com/21y4d/nmapAutomator.git
 sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
@@ -56,5 +56,3 @@ Scan everything
 ```bash
 nmapAutomator -H $IP -t all 
 ```
-
-
