@@ -1,14 +1,26 @@
 # NMAP Scanning
 
 ## Manual Scanning
-Fast Full System Scan
+https://nmap.org/book/
+- Fast Full System Scan - Top 20 ports
 ```bash
 sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 20 | tee fullscan.txt
 ```
-Full System Scan
+- Full System Scan - Top 20 ports
 ```bash
 sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 20 | tee fullscan.txt
 ```
+- Fast Full System Scan - Top 100 ports
+```bash
+sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 100 | tee fullscan.txt
+```
+- Full System Scan - Top 100 ports
+```bash
+sudo nmap -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --top-ports 100 | tee fullscan.txt
+```
+
+
+
 
 ## Rustscan
 https://github.com/RustScan/RustScan
