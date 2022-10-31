@@ -33,7 +33,7 @@ rustscan -a $IP | tee fullscan.txt
 ## Autorecon
 https://github.com/Tib3rius/AutoRecon
 
-1. Install `autorecon`
+Install `autorecon`
 ```bash
 python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
 ```
@@ -46,7 +46,7 @@ autorecon $IP
 ## NmapAutomator
 https://github.com/21y4d/nmapAutomator
 
-1. Install `nmapAutomator`
+Install `nmapAutomator`
 ```bash
 git clone https://github.com/21y4d/nmapAutomator.git
 sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
