@@ -2,11 +2,11 @@
 
 ## Manual Scanning
 https://nmap.org/book/
+
 List all machines on subnet
 ```bash
 sudo nmap -sL 10.1.1.0/24
 ```
-
 
 - Fast Full System Scan - Top 20 ports
 ```bash
