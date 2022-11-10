@@ -2,6 +2,7 @@
 
 ## Manual Scanning
 https://nmap.org/book/
+
 https://www.digitalocean.com/community/tutorials/nmap-switches-scan-types
 
 List all machines on subnet
