@@ -1,3 +1,5 @@
+## Powercat
+
 ### Powercat installation
 Install `powercat` on Kali machine:
 ```bash
@@ -7,7 +9,7 @@ Powercat is located in `usr/share/windows-resources/powercat`
 
 Transfer `powercat` to target machine using methods found [here]()
 
-## Powercat File Transfers
+### Powercat File Transfers
 ```bash
 
 ```
