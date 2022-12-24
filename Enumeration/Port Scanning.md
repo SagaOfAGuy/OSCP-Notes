@@ -15,7 +15,7 @@ sudo nmap -p- -sT -A -sC -sV $IP
 ```
 
 
-###Top 20 ports
+### Top 20 ports
 - Fast Full System Scan
 ```bash
 sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 20 | tee fullscan.txt
