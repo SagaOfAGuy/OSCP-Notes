@@ -1,4 +1,4 @@
-# NMAP Scanning
+# Nmap Scanning
 
 ## Manual Scanning
 https://nmap.org/book/
@@ -9,8 +9,13 @@ List all machines on subnet
 ```bash
 sudo nmap -sL 10.1.1.0/24
 ```
+### All Ports
+```
+sudo nmap -p- -sT -A -sC -sV $IP 
+```
 
-#### Top 20 ports
+
+###Top 20 ports
 - Fast Full System Scan
 ```bash
 sudo nmap --max-retries 2 -A -sV -sC -sU -sT -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 20 | tee fullscan.txt
@@ -29,7 +34,7 @@ sudo nmap -A -sV -sC -sT -Pn $IP --version-intensity 0 --script=*enum --script=v
 sudo nmap -A -sV -sC -sU -Pn $IP --version-intensity 0 --script=*enum --script=vuln --top-ports 20 | tee fullscan.txt
 ```
 
-#### Top 100 ports
+### Top 100 ports
 
 - Fast Full System Scan
 ```bash
