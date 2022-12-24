@@ -3,4 +3,4 @@
 
 # OSCP-Notes
 
-Notes for OSCP
+Study Notes for OSCP
