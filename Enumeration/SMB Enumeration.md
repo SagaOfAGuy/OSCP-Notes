@@ -20,3 +20,7 @@ Toggle safety argument and look for Vulnerability **MS08-067**. Unsafe means tha
 sudo nmap -v -p 139,445, --script=smb-vuln-ms08-067 --script-args=unsage=1 $IP
 ```
 
+## SMB Enum using Enum4Linux
+```
+enum4linux $IP
+```
