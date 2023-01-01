@@ -9,7 +9,45 @@ List all machines on subnet
 ```bash
 sudo nmap -sL 10.1.1.0/24
 ```
-### All Ports
+### Stealthy Scan
+"Sneaky" scan that does not complete the complete TCP 3-way handshake
+```
+sudo nmap -sS $IP
+```
+
+### TCP Connect Scan 
+Scans and completes 3-way handshake. Opposite of the "Stealthy Scan"
+```
+sudo nmap -sT $IP
+```
+
+### UDP Scanning
+Scans UDP ports
+```
+sudo nmap -sU $IP
+```
+
+### Sweep entire network
+Scan entire network
+```
+sudo nmap -sn 10.0.0.1/24
+```
+
+### Using Nmap Scripting Engine
+Reference - https://nmap.org/book/nse-usage.html
+
+Scan target for SMB vulnerabilities
+```
+sudo nmap $IP --script=smb-os-discovery
+```
+
+Scan for HTTP Headers
+Perform DNS Zone transfer
+```
+sudo nmap --script=dns-zone-transfer -p 53 $DOMAIN
+```
+
+### Scan All Ports
 ```
 sudo nmap -p- -sT -A -sC -sV $IP 
 ```
