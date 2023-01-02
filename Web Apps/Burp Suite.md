@@ -43,4 +43,4 @@ Grabbing the recursive expressions:
 
 ![image](https://user-images.githubusercontent.com/68156940/210188234-c01e91dc-a509-4f0a-8c13-44213572dcfe.png)
 
-
+If the results for an entry yields a **302** status, then that means that the password/username combo is correct and those are the correct credentials to login. 
