@@ -4,3 +4,7 @@
 # OSCP-Notes
 
 Study Notes for OSCP
+
+- [System Setup](#setup)
+  - [Tmux Configuration](#tmux)
+
