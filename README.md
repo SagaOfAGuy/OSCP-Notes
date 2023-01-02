@@ -28,10 +28,13 @@ Study Notes for OSCP
       - Dirsearch
     - [SQL Injection](#SQLi)
   - [Public Exploits](#public-exploits)
+  - [Buffer Overflow](#buffer-overflow)
+    - [Linux Buffer Overflow](#linux-buffer-overflow)
+    - [Windows Buffer Overflow](#windows-buffer-overflow)
 - [Windows](#windows)
 - [Linux](#linux)
 - [Active Directory (AD)](#Active-Directory)
-  - [Lateral Movement] 
+  - [Lateral Movement](#lateral-movement) 
 - [Post Exploitation](#post-exploitation)
   - [File Transfers](#file-transfers)
     - [Netcat](#netcat)
