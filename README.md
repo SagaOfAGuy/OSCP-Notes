@@ -6,7 +6,7 @@
 Study Notes for OSCP
 
 - [System Setup](#setup)
-  - [Tmux Configuration](#tmux)
+  - [Tmux Configuration](#tmux configuration)
   
   
   
