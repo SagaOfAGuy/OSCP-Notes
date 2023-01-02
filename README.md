@@ -5,7 +5,7 @@
 
 Study Notes for OSCP
 
-- [System Setup](#system-setup)
+- [Attack Machine Setup](#attack-machine-setup)
   - [Tmux Configuration](#Tmux)
   - [Bash Aliases](#Aliases)
 - [Port Scanning](#port-scanning)
@@ -31,17 +31,17 @@ Study Notes for OSCP
 - [Windows](#windows)
 - [Linux](#linux)
 - [Active Directory (AD)](#Active-Directory)
+  - [Lateral Movement] 
 - [Post Exploitation](#post-exploitation)
   - [File Transfers](#file-transfers)
     - [Netcat](#netcat)
     - [Socat](#socat)
     - [Powershell](#powershell)
     - [Powercat](#powercat)
+- [Pivoting](#pivoting) 
 
 
-
-
-## System Setup
+## Attack Machine Setup
 
 ### Tmux
 `tmux` conf that allows for copy/pasting and other convenient options within Tmux 
