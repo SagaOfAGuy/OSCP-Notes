@@ -132,8 +132,9 @@ alias powerview='cp /usr/share/powershell-empire/empire/server/data/module_sourc
 alias getspn='cp /usr/share/powershell-empire/empire/server/data/module_source/situational_awareness/network/Get-SPN.ps1 . && echo "\nGet-SPN.ps1 has been transferred to ${$(pwd)}"'
 alias plink='cp /usr/share/windows-resources/binaries/plink.exe . && echo "\nplink.exe has been transferred to ${$(pwd)}"'
 alias winprivescpack='sudo cp /opt/privesc.zip . && echo "\bPrivesc.zip toolpack has been transferred to ${$(pwd)}"'
-alias winpeas='sudo cp -R /opt/winPEAS . && echo "\nWinPEAS has been transferred to ${$(pwd)}"'
-alias linpeas='sudo cp -R /opt/linPEAS . && echo "\nLinPEAS has been trasnferred to ${$(pwd)}"'
+alias winpeasbat='wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEAS.bat && echo "\nWinPEAS.bat has been downloaded to ${$(pwd)}"'
+alias winpeas='wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASany.exe && echo "\nWinPEAS has been downloaded tto ${$(pwd)}"'
+alias linpeas='wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh && echo "\nLinPEAS has been downloaded to ${$(pwd)}"'
 alias activedirpack='sudo cp /opt/active_directory.zip . && echo "\nActive directory toolpack has been transferred to ${$(pwd)}"'
 alias mimi32='cp /usr/share/windows-resources/mimikatz/Win32/mimikatz.exe . && echo "\nMimikatz 32 Bit has been transferred to ${$(pwd)}"'
 alias mimi64='cp /usr/share/windows-resources/mimikatz/x64/mimikatz.exe . && echo "\nMimikatz 64 Bit has been transferred to ${$(pwd)}"'
@@ -150,6 +151,8 @@ alias winpeasany='cp ~/Desktop/tools/winPEASany.exe . && echo "\nwinPEASany.exe 
 alias seatbelt='cp ~/Desktop/tools/seatbelt.exe && echo "\nseatbelt.exe has been transferred to ${$(pwd)}"'
 alias fgdump='cp /usr/share/windows-resources/binaries/fgdump/fgdump.exe .'
 alias testwebshell='wget https://raw.githubusercontent.com/WhiteWinterWolf/wwwolf-php-webshell/master/webshell.php'
+alias lse='wget https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh -O lse.sh;chmod 700 lse.sh && echo "\nlse.sh has been downloaded to ${$(pwd)}"'
+alias les2='wget https://raw.githubusercontent.com/jondonas/linux-exploit-suggester-2/master/linux-exploit-suggester-2.pl; chmod +x linux-exploit-suggester-2.pl && echo "\nLinux exploit suggester has been downloaded to ${$(pwd)}"'
 ```
 
 ### Windows Reverse TCP Shells
