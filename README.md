@@ -8,7 +8,6 @@ Study Notes for OSCP
 - [System Setup](#setup)
   - [Tmux Configuration](#Tmux)
   - [Bash Aliases](#Aliases)
-
 - [Active Recon](#recon)
   - [DNS](#dns)
   - [NFS](#nfs)
@@ -16,20 +15,23 @@ Study Notes for OSCP
   - [SMTP](#smtp)
   - [SNMP](#snmp)
   - [HTTP/HTTPS](#http)
-
 - [Exploitation](#exploitation)
   - [Web Apps](#webapp)
-    - Burpsuite
-    - LFI
-    - Cross Site Scripting (XSS)
-    - 
-  
+    - [Burpsuite](#burpsuite)
+    - [LFI](#LFI)
+    - [Cross Site Scripting (XSS)](#XSS)
+      - JavaScript Injection
+      - Stealing Cookies
+    - [Web App Scanning](#Scanning)
+      - Nikto
+      - Dirsearch
+    - [SQL Injection](#SQLi)
   
 
 ## System Setup
 
 ### Tmux
-`tmux` conf that allows for copy/pasting and other convenient options
+`tmux` conf that allows for copy/pasting and other convenient options within Tmux 
 
 1. Create a `~/.tmux.conf` file
 2. Source the conf file by running `source ~/.tmux.conf`
