@@ -12,7 +12,9 @@ Study Notes for OSCP
   
   
 
-## tmux
+## System Setup
+
+### Tmux setup
 `tmux` conf that allows for copy/pasting
 
 1. Create a `~/.tmux.conf` file
