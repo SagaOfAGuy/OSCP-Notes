@@ -5,9 +5,10 @@
 
 Study Notes for OSCP
 
-- [System Setup](#setup)
+- [System Setup](#system-setup)
   - [Tmux Configuration](#Tmux)
   - [Bash Aliases](#Aliases)
+- [Port Scanning](#port-scanning)
 - [Active Recon](#recon)
   - [DNS](#dns)
   - [NFS](#nfs)
@@ -26,7 +27,13 @@ Study Notes for OSCP
       - Nikto
       - Dirsearch
     - [SQL Injection](#SQLi)
-  
+- [File Transfers](#file-transfers)
+  - [Netcat](#netcat)
+  - [Socat](#socat)
+  - [Powershell](#powershell)
+  - [Powercat](#powercat)
+
+
 
 ## System Setup
 
