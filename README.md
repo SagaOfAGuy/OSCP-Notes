@@ -7,4 +7,12 @@ Study Notes for OSCP
 
 - [System Setup](#setup)
   - [Tmux Configuration](#tmux)
+  
+  
+  
+  
+## random
+blah
+
+## tmux
 
