@@ -20,5 +20,5 @@ nc -nvlp $PORT > $FILENAME
 
 2. Send file from Kali machine:
 ```bash
-nc -nv $TARGET_IP $PORT /path/to/file
+nc -nv $TARGET_IP $PORT < /path/to/file
 ```
