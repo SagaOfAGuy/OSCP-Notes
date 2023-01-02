@@ -27,11 +27,17 @@ Study Notes for OSCP
       - Nikto
       - Dirsearch
     - [SQL Injection](#SQLi)
-- [File Transfers](#file-transfers)
-  - [Netcat](#netcat)
-  - [Socat](#socat)
-  - [Powershell](#powershell)
-  - [Powercat](#powercat)
+  - [Public Exploits](#public-exploits)
+- [Windows](#windows)
+- [Linux](#linux)
+- [Active Directory (AD)](#Active-Directory)
+- [Post Exploitation](#post-exploitation)
+  - [File Transfers](#file-transfers)
+    - [Netcat](#netcat)
+    - [Socat](#socat)
+    - [Powershell](#powershell)
+    - [Powercat](#powercat)
+
 
 
 
