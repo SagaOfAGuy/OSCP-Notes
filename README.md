@@ -31,7 +31,7 @@ Study Notes for OSCP
   - [Buffer Overflow](#buffer-overflow)
     - [Linux Buffer Overflow](#linux-buffer-overflow)
     - [Windows Buffer Overflow](#windows-buffer-overflow)
-- [Windows Privesc](#Windows-Privsec)
+- [Windows Privesc](#windows-privsec)
 - [Linux Privesc](#Linux-Privesc)
 - [Active Directory (AD)](#Active-Directory)
   - [Lateral Movement](#lateral-movement) 
