@@ -31,8 +31,8 @@ Study Notes for OSCP
   - [Buffer Overflow](#buffer-overflow)
     - [Linux Buffer Overflow](#linux-buffer-overflow)
     - [Windows Buffer Overflow](#windows-buffer-overflow)
-- [Windows](#windows)
-- [Linux](#linux)
+- [Windows Privesc](#Windows-Privsec)
+- [Linux Privesc](#Linux-Privesc)
 - [Active Directory (AD)](#Active-Directory)
   - [Lateral Movement](#lateral-movement) 
 - [Post Exploitation](#post-exploitation)
@@ -368,6 +368,94 @@ function x64compileandrun() {
     i686-w64-mingw32-gcc $1 -o $2 && wine $2
 }
 ```
+
+## Windows Privesc
+
+### System Enum
+
+Get System Information
+```cmd
+systeminfo
+```
+Grabbing OS Name and Version
+```cmd
+systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"
+```
+View patches
+```cmd
+wmic qfe
+```
+
+```cmd
+wmic qfe get caption,Description,HotFixId,InstalledOn
+```
+
+Get list of Drives
+```cmd
+wmic logicaldisk get caption,description,providername
+```
+
+
+
+### User Enum
+Get current user
+```cmd
+whoami
+```
+Get current user privileges
+```cmd
+whoami /priv
+```
+
+Get list of groups current user is inside of
+```cmd
+whoami /groups
+```
+
+List users on machine
+```cmd
+net user
+```
+
+```cmd
+net user $USER
+```
+
+Query group membership
+
+```cmd
+net localgroup
+```
+
+```cmd
+localgroup <group name>
+```
+
+### Network Enum
+List IP addresses and network configs
+```cmd
+ipconfig /all
+```
+
+Dump arp cache 
+```cmd
+arp -a
+```
+*Note: If the IP Address for `arp -a` is different from the default gateway or DNS, it could be a sign of the machine being connected to an AD Domain Controller.*
+
+List route table 
+```cmd
+route print
+```
+
+List ports
+```cmd
+netstat -ano
+```
+
+### Password Searching
+
+### Antivirus Enum
 
 
 
