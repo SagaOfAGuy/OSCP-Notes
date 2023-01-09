@@ -448,14 +448,98 @@ List route table
 route print
 ```
 
-List ports
+List ports and listening ports
 ```cmd
 netstat -ano
 ```
 
 ### Password Searching
 
+Searching for passwords in current directory
+```cmd
+findstr /si password *.txt *.ini *.config 
+```
+```cmd
+findstr /si Password: *.txt *.ini *.config 
+```
+
+```cmd
+findstr /si Username: Password: *.txt *.ini *.config 
+```
+
+```cmd
+findstr /si password= *.txt *.ini *.config 
+```
+
 ### Antivirus Enum
+
+Discovering AV (Windows Defender)
+```cmd
+sc query windefend
+```
+
+Discovering services
+```cmd
+sc query type=service
+```
+
+Discovering firewalls 
+```cmd
+netsh advfirewall firewall dump
+```
+Discovering firewalls (Legacy) 
+```cmd
+netsh firewall show state
+```
+
+Firewall config 
+```cmd
+netsh firewall show config
+```
+
+### Automated Tools 
+WinPEAS
+```bash
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEAS.bat
+
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASany.exe
+```
+
+Seatbelt
+```bash
+wget https://raw.githubusercontent.com/rasta-mouse/Sherlock/master/Sherlock.ps1
+```
+
+Watson 
+```bash
+
+```
+
+SharpUp
+```bash
+
+```
+
+windows-exploit-suggester
+```bash
+wget https://raw.githubusercontent.com/AonCyberLabs/Windows-Exploit-Suggester/master/windows-exploit-suggester.py
+```
+
+Sherlock.ps1 
+```bash
+wget https://raw.githubusercontent.com/rasta-mouse/Sherlock/master/Sherlock.ps1
+```
+
+PowerUp.ps1
+```bash
+wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1
+```
+
+jaws-enum.ps1
+```bash
+wget https://raw.githubusercontent.com/411Hall/JAWS/master/jaws-enum.ps1
+```
+
 
 
 
