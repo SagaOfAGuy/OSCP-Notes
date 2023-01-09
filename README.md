@@ -498,12 +498,14 @@ netsh firewall show config
 ```
 
 ### Automated Tools 
+Tools that perform automated privesc enum on Windows boxes
 WinPEAS
 ```bash
 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEAS.bat
 
 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASany.exe
 ```
+*If WinPEASany.exe fails, it may either be blocked by antivirus or the target **does not have .NET version 4.0**.* Try to run WinPEAS.bat
 
 Seatbelt
 ```bash
