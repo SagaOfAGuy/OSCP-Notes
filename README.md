@@ -31,7 +31,7 @@ Study Notes for OSCP
   - [Buffer Overflow](#buffer-overflow)
     - [Linux Buffer Overflow](#linux-buffer-overflow)
     - [Windows Buffer Overflow](#windows-buffer-overflow)
-- [Windows Privesc](#windows-privsec)
+- [Windows Privesc](#windows)
 - [Linux Privesc](#Linux-Privesc)
 - [Active Directory (AD)](#Active-Directory)
   - [Lateral Movement](#lateral-movement) 
@@ -369,7 +369,7 @@ function x64compileandrun() {
 }
 ```
 
-## Windows Privesc
+## Windows
 
 ### System Enum
 
