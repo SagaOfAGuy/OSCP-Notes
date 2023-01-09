@@ -369,7 +369,7 @@ function x64compileandrun() {
 }
 ```
 
-## Windows
+## Windows Privilege Escalation
 
 ### System Enum
 
