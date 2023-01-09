@@ -507,17 +507,17 @@ wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASany
 
 Seatbelt
 ```bash
-wget https://raw.githubusercontent.com/rasta-mouse/Sherlock/master/Sherlock.ps1
+https://github.com/GhostPack/Seatbelt
 ```
 
 Watson 
 ```bash
-
+https://github.com/rasta-mouse/Watson
 ```
 
 SharpUp
 ```bash
-
+https://github.com/GhostPack/SharpUp
 ```
 
 windows-exploit-suggester
